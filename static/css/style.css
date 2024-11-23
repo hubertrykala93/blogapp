@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+    --body-font: "Open Sans", sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+
+    --gap-400: 40px;
+
+    --primary-color: #e49142;
+    --secondary-color: #D91656;
+    --neutral-bg: #f8f8f8;
+    --neutral-primary: #692f6f;
+    --white: #fff;
+    --text-color: #646464;
+    --error-color: #af0000;
+    --border-color: #e8e7e7;
+    --message-success-color: #acda91;
+    --message-info-color: #94c3dd;
+    --message-error-color: #ff8b8b;
+    --message-warning-color: #f9d571;
+
+    --radius: 12px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color .3s;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+textarea {
+    font-family: var(--body-font);
+    font-size: 13px;
+    padding: 5px 15px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+/* Global */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--neutral-bg);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+/* Reusable Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+/* Components */
+/* Forms */
+.btn {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
