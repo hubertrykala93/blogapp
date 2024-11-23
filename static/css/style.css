@@ -5,10 +5,9 @@
 
     --gap-400: 40px;
 
-    --primary-color: #e49142;
-    --secondary-color: #D91656;
-    --neutral-bg: #f8f8f8;
-    --neutral-primary: #692f6f;
+    --primary-color: #89A8B2;
+    --secondary-color: #E5E1DA;
+    --neutral-bg: #F1F0E8;
     --white: #fff;
     --text-color: #646464;
     --error-color: #af0000;
@@ -102,5 +101,23 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover,
 .btn:focus-visible {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--text-color);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-400);
 }

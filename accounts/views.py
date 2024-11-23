@@ -1,10 +1,7 @@
 from django.shortcuts import render
-from django.conf import settings
 
 
 def login(request):
-    print(settings.STATIC_URL)
-    print(settings.STATIC_ROOT)
     return render(
         request=request,
         template_name="accounts/login.html",
