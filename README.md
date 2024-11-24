@@ -27,7 +27,7 @@ psql -U username
 ```
 
 ```bash
-CREATE TABLE blogapp;
+CREATE DATABASE blogapp;
 ```
 
 Set the data for your local PostgreSQL database in settings/settings.py.
