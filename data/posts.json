@@ -1,0 +1,242 @@
+[
+  {
+    "model": "blog.post",
+    "pk": 53,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.774Z",
+      "updated_at": "2024-11-24T15:41:41.774Z",
+      "user": 9,
+      "title": "Road Trip Through California",
+      "content": "California is a paradise for road trip lovers! Starting in Los Angeles, visit Malibu, drive the iconic Pacific Coast Highway, and finish in San Francisco with Golden Gate Bridge and Alcatraz. Stop at Monterey for 17-Mile Drive views.",
+      "slug": "road-trip-through-california"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 54,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.777Z",
+      "updated_at": "2024-11-24T15:41:41.777Z",
+      "user": 9,
+      "title": "New York City",
+      "content": "New York City is packed with landmarks! Don’t miss the Statue of Liberty, Times Square, Central Park, the Empire State Building, and the Brooklyn Bridge.",
+      "slug": "new-york-city"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 55,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.778Z",
+      "updated_at": "2024-11-24T15:41:41.778Z",
+      "user": 9,
+      "title": "Discovering the Grand Canyon",
+      "content": "Explore the breathtaking Grand Canyon, one of the seven natural wonders of the world. Hike, take a helicopter tour, or just admire the stunning views from the South Rim.",
+      "slug": "discovering-the-grand-canyon"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 56,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.779Z",
+      "updated_at": "2024-11-24T15:41:41.779Z",
+      "user": 9,
+      "title": "The Best of Miami",
+      "content": "Miami offers white sandy beaches, vibrant nightlife, and incredible Cuban food. Don’t miss South Beach, Wynwood Walls, and Little Havana.",
+      "slug": "the-best-of-miami"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 57,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.780Z",
+      "updated_at": "2024-11-24T15:41:41.780Z",
+      "user": 9,
+      "title": "Yellowstone National Park",
+      "content": "Yellowstone is a wonderland of geysers, hot springs, and wildlife. Visit Old Faithful, the Grand Prismatic Spring, and look for bison roaming freely.",
+      "slug": "yellowstone-national-park"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 58,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.781Z",
+      "updated_at": "2024-11-24T15:41:41.781Z",
+      "user": 9,
+      "title": "Route 66",
+      "content": "Route 66 is the classic American road trip. Travel from Chicago to Santa Monica, stopping at quirky roadside attractions and historic towns along the way.",
+      "slug": "route-66"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 59,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.782Z",
+      "updated_at": "2024-11-24T15:41:41.782Z",
+      "user": 9,
+      "title": "Las Vegas",
+      "content": "Las Vegas is more than casinos! Visit the Neon Museum, Red Rock Canyon, and enjoy world-class shows and dining experiences.",
+      "slug": "las-vegas"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 60,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.782Z",
+      "updated_at": "2024-11-24T15:41:41.782Z",
+      "user": 9,
+      "title": "Chicago’s Skyline and Deep-Dish Pizza",
+      "content": "Chicago boasts a stunning skyline and the best deep-dish pizza. Visit Millennium Park, the Art Institute, and take an architecture river cruise.",
+      "slug": "chicagos-skyline-and-deep-dish-pizza"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 61,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.783Z",
+      "updated_at": "2024-11-24T15:41:41.783Z",
+      "user": 9,
+      "title": "The Magic of New Orleans",
+      "content": "New Orleans offers jazz, beignets, and rich history. Stroll through the French Quarter, visit a jazz club, and enjoy Creole and Cajun cuisine.",
+      "slug": "the-magic-of-new-orleans"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 62,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.785Z",
+      "updated_at": "2024-11-24T15:41:41.785Z",
+      "user": 9,
+      "title": "Exploring the Great Smoky Mountains",
+      "content": "The Great Smoky Mountains are perfect for hiking, wildlife spotting, and scenic drives. Don’t miss Clingmans Dome and Cades Cove.",
+      "slug": "exploring-the-great-smoky-mountains"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 63,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.786Z",
+      "updated_at": "2024-11-24T15:41:41.786Z",
+      "user": 9,
+      "title": "Washington, D.C.",
+      "content": "Washington, D.C. is a treasure trove of history. Visit the Lincoln Memorial, Smithsonian museums, and the U.S. Capitol.",
+      "slug": "washington-dc"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 64,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.786Z",
+      "updated_at": "2024-11-24T15:41:41.786Z",
+      "user": 9,
+      "title": "Seattle and the Pacific Northwest",
+      "content": "Seattle is a hub for coffee lovers and nature enthusiasts. Visit Pike Place Market, the Space Needle, and nearby Mount Rainier.",
+      "slug": "seattle-and-the-pacific-northwest"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 65,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.787Z",
+      "updated_at": "2024-11-24T15:41:41.787Z",
+      "user": 9,
+      "title": "Texas Road Trip",
+      "content": "Texas is full of surprises! Explore Austin’s live music scene, Dallas’s historic sites, and Houston’s Space Center.",
+      "slug": "texas-road-trip"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 66,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.788Z",
+      "updated_at": "2024-11-24T15:41:41.788Z",
+      "user": 9,
+      "title": "Paradise Islands for Adventure and Relaxation",
+      "content": "Hawaii offers a mix of adventure and relaxation. Visit active volcanoes, lush rainforests, and enjoy pristine beaches on the islands of Oahu and Maui.",
+      "slug": "paradise-islands-for-adventure-and-relaxation"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 67,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.788Z",
+      "updated_at": "2024-11-24T15:41:41.788Z",
+      "user": 9,
+      "title": "The Alaskan Wilderness",
+      "content": "Alaska is an untamed wilderness. Go whale watching, see glaciers, and experience the Northern Lights in the last frontier.",
+      "slug": "the-alaskan-wilderness"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 68,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.789Z",
+      "updated_at": "2024-11-24T15:41:41.789Z",
+      "user": 9,
+      "title": "Boston’s Historic Freedom Trail",
+      "content": "Boston’s Freedom Trail takes you through America’s revolutionary history. Don’t miss Paul Revere’s House and the Boston Tea Party Museum.",
+      "slug": "bostons-historic-freedom-trail"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 69,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.789Z",
+      "updated_at": "2024-11-24T15:41:41.789Z",
+      "user": 9,
+      "title": "Exploring Utah’s National Parks",
+      "content": "Utah’s national parks are breathtaking. Hike through Arches’ iconic rock formations and Zion’s dramatic canyons.",
+      "slug": "exploring-utahs-national-parks"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 70,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.790Z",
+      "updated_at": "2024-11-24T15:41:41.790Z",
+      "user": 9,
+      "title": "The Charm of Charleston and Savannah",
+      "content": "Charleston and Savannah charm visitors with cobblestone streets, historic mansions, and Southern hospitality.",
+      "slug": "the-charm-of-charleston-and-savannah"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 71,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.791Z",
+      "updated_at": "2024-11-24T15:41:41.791Z",
+      "user": 9,
+      "title": "Winter Wonderland in Colorado",
+      "content": "Colorado transforms into a winter paradise. Ski in Aspen, visit hot springs, and enjoy snowshoeing in the Rockies.",
+      "slug": "winter-wonderland-in-colorado"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 72,
+    "fields": {
+      "created_at": "2024-11-24T15:41:41.792Z",
+      "updated_at": "2024-11-24T16:08:13.701Z",
+      "user": 9,
+      "title": "Top Hidden Gems in the USA",
+      "content": "Discover lesser-known treasures like Oregon’s Crater Lake, South Dakota’s Badlands, and the hidden beaches of California.",
+      "slug": "top-hidden-gems-in-the-usa"
+    }
+  }
+]
