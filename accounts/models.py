@@ -74,7 +74,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural = "Accounts"
 
     def __str__(self):
-        return str(self.pk)
+        return self.username
 
     def save(self, *args, **kwargs):
         if not self.pk and not self.image:

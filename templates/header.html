@@ -1,15 +1,26 @@
 <div class="header">
     <ul class="left">
-        <li><a href="{% url 'index' %}">Home</a></li>
+        <li>
+            <a href="{% url 'index' %}">Home</a>
+        </li>
     </ul>
 
     {% if request.user.is_authenticated %}
-    <a href="{% url 'logout' %}">
-        <button type="submit" class="btn btn-submit-btn">Logout</button>
-    </a>
+    <ul class="menu">
+        <li>
+            <a href="{% url 'create-post' %}">Create Post</a>
+        </li>
+        <li>
+            <a href="{% url 'logout' %}">
+                <button type="submit" class="btn btn-submit-btn">Logout</button>
+            </a>
+        </li>
+    </ul>
     {% else %}
     <ul class="menu">
-        <li><a href="{% url 'login' %}">Login</a></li>
+        <li>
+            <a href="{% url 'login' %}">Login</a>
+        </li>
         <li>
             <a href="{% url 'register' %}">
                 <button class="btn btn-submit-btn" type="submit">Register</button>

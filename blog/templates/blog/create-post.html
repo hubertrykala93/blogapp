@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="authentication">
+    <div class="register-form">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <h2>Create Post</h2>
+
+            <div class="form-row">
+                <label for="title">Title *</label>
+                <input type="text" id="title" name="title" placeholder="Title" {% if form.title.value %}value="{{ form.title.value }}"{% endif %}>
+
+                {% if form.title.errors %}
+                {% for error in form.title.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row">
+                <label for="content">Content *</label>
+                <textarea id="content" name="content">{% if form.content.value %}{{ form.content.value }}{% endif %}</textarea>
+
+                {% if form.content.errors %}
+                {% for error in form.content.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-button">
+                <a href="{% url 'index' %}">
+                    <button type="submit" class="btn btn-submit-btn">Post</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
