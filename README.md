@@ -10,7 +10,7 @@ $ cd blogapp
 Create a virtual environment to install dependencies in and activate it:
 
 ```bash
-$ python3 -m venv venv
+$ python3.10 -m venv venv
 $ source venv/bin/activate
 ```
 
@@ -22,10 +22,10 @@ Install the dependencies:
 
 Set the data for your local PostgreSQL database in settings/settings.py.
 
-DATABASE_NAME
-DATABASE_USER
-DATABASE_PASSWORD
-DATABASE_HOST
+DATABASE_NAME</br>
+DATABASE_USER</br>
+DATABASE_PASSWORD</br>
+DATABASE_HOST</br>
 DATABASE_PORT
 
 Import the data into PostgreSQL.
