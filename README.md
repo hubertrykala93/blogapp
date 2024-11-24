@@ -38,6 +38,12 @@ DATABASE_PASSWORD</br>
 DATABASE_HOST</br>
 DATABASE_PORT
 
+Run migrations.
+
+```bash
+(venv)$ python3 manage.py migrate
+```
+
 Import the data into PostgreSQL.
 
 ```bash
