@@ -23,7 +23,7 @@ Install the dependencies:
 Create a new PostgreSQL database.
 
 ```bash
-psql -U username
+psql -U postgres
 ```
 
 ```bash
