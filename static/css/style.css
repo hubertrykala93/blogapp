@@ -63,7 +63,8 @@ textarea {
 }
 
 /* Global */
-body {
+html, body {
+    height: 100%;
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: var(--neutral-bg);
@@ -71,7 +72,9 @@ body {
 
 .container {
     display: flex;
-    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
     padding: 0 20px;
     margin: 0 20px;
 }
@@ -120,4 +123,64 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     gap: var(--gap-400);
+}
+
+/* Forms */
+.register-form {
+    width: 500px;
+    padding: var(--gap-400);
+    background-color: var(--white);
+    border-radius: var(--radius);
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-remember {
+    display: inline-block;
+}
+
+.form-row label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius);
+}
+
+.form-button {
+    margin-top: 30px;
+}
+
+.form-error {
+    font-size: 11px;
+    color: var(--error-color);
+    margin-top: 5px;
+}
+
+/* Content */
+.authentication {
+    margin-top: var(--gap-400);
+    padding: var(--gap-400);
+}
+
+/* Messages */
+.message-success {
+    padding: 10px;
+    color: var(--text-color);
+    text-color: var(--white);
+    text-align: center;
+    background-color: var(--message-success-color);
 }

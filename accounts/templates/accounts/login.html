@@ -2,4 +2,46 @@
 
 {% block title %}{{ title }}{% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+<section class="authentication">
+    <div class="register-form">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <h2>Log In</h2>
+
+            <div class="form-row">
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" placeholder="Username" {% if form.username.value %}value="{{ form.username.value }}" {% endif %}>
+
+                {% if form.username.errors %}
+                {% for error in form.username.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="Password" {% if form.password.value %}value="{{ form.password.value }}" {% endif %}>
+
+                {% if form.password.errors %}
+                {% for error in form.password.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row form-remember">
+                <input type="checkbox" id="remember_me" name="remember_me" {% if remember_me in request.POST %}{% if remember_me == 'on' %}checked{% endif %}{% endif %}>
+                <label for="remember_me">Remember Me</label>
+            </div>
+
+            <div class="form-button">
+                <a href="{% url 'index' %}">
+                    <button type="submit" class="btn btn-submit-btn">Sign Up</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

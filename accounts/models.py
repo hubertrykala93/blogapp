@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, UserManager
 from django.utils.timezone import now
+from django.db.models.signals import pre_delete
+from django.dispatch import receiver
 
 
 class ProfileImage(models.Model):
@@ -80,3 +82,9 @@ class User(AbstractBaseUser, PermissionsMixin):
             self.image = profile_image
 
         super(User, self).save(*args, **kwargs)
+
+
+@receiver(signal=pre_delete, sender=User)
+def delete_profile_image(sender, instance, **kwargs):
+    if instance and instance.image:
+        instance.image.delete()
