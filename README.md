@@ -20,6 +20,16 @@ Install the dependencies:
 (venv)$ pip3 install -r requirements.txt
 ```
 
+Create a new PostgreSQL database.
+
+```bash
+psql -U username
+```
+
+```bash
+CREATE TABLE blogapp;
+```
+
 Set the data for your local PostgreSQL database in settings/settings.py.
 
 DATABASE_NAME</br>
