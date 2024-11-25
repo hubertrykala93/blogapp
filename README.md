@@ -29,7 +29,7 @@ CREATE DATABASE blogapp;
 
 Configure database settings For example:
 
-```bash
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
