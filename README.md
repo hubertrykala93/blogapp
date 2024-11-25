@@ -3,55 +3,59 @@
 Install Python 3.10 and clone the GitHub repository.
 
 ```bash
-$ git clone https://github.com/hubertrykala93/blogapp.git
-$ cd blogapp
+git clone https://github.com/hubertrykala93/blogapp.git
+cd blogapp
 ```
 
-Create a virtual environment to install dependencies in and activate it:
+Set up a virtual environment:
 
 ```bash
-$ python3.10 -m venv venv
-$ source venv/bin/activate
+python3.10 -m venv venv
+source venv/bin/activate
 ```
 
-Install the dependencies:
+Install dependencies:
 
 ```bash
-(venv)$ pip3 install -r requirements.txt
+(venv) pip3 install -r requirements.txt
 ```
 
-Create a new PostgreSQL database.
+Set up the PostgreSQL database.
 
 ```bash
 psql -U postgres
-```
-
-```bash
 CREATE DATABASE blogapp;
 ```
 
-Set the data for your local PostgreSQL database in settings/settings.py.
-
-DATABASE_NAME</br>
-DATABASE_USER</br>
-DATABASE_PASSWORD</br>
-DATABASE_HOST</br>
-DATABASE_PORT
-
-Run migrations.
+Configure database settings For example:
 
 ```bash
-(venv)$ python3 manage.py migrate
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'blogapp',
+        'USER': 'your_username',
+        'PASSWORD': 'your_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 ```
 
-Import the data into PostgreSQL.
+Apply migrations.
 
 ```bash
-(venv)$ python3 manage.py loaddata data/users.json
-(venv)$ python3 manage.py loaddata data/posts.json
+(venv) python3 manage.py migrate
 ```
 
-Run the project.
+Load initial data.
+
+```bash
+(venv) python3 manage.py loaddata data/users.json
+(venv) python3 manage.py loaddata data/posts.json
+```
+
+ Run the development server.
 
 ```bash
 (venv)$ python3 manage.py runserver
