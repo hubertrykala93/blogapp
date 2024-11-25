@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="authentication">
+    <div class="register-form">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <h2>Create Author</h2>
+
+            <div class="form-row">
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" placeholder="Username" {% if form.username.value %}value="{{ form.username.value }}"{% endif %}>
+
+                {% if form.username.errors %}
+                {% for error in form.username.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email *</label>
+                <input type="text" id="email" name="email" placeholder="E-mail Address" {% if form.email.value %}value="{{ form.email.value }}"{% endif %}>
+
+                {% if form.email.errors %}
+                {% for error in form.email.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="Password" {% if form.password.value %}value="{{ form.password.value }}"{% endif %}>
+
+                {% if form.password.errors %}
+                {% for error in form.password.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-row">
+                <label for="repassword">Confirm Password *</label>
+                <input type="password" id="repassword" name="repassword" placeholder="Confirm Password" {% if form.repassword.value %}value="{{ form.repassword.value }}"{% endif %}>
+
+                {% if form.repassword.errors %}
+                {% for error in form.repassword.errors %}
+                <span class="form-error">{{ error }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form-button">
+                <a href="{% url 'login' %}">
+                    <button type="submit" class="btn btn-submit-btn">Sign Up</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

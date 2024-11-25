@@ -102,3 +102,37 @@ def log_out(request):
     )
 
     return redirect(to="login")
+
+
+@login_required(login_url="login")
+def create_author(request):
+    form = RegisterForm()
+
+    if request.method == "POST":
+        form = RegisterForm(
+            data=request.POST,
+        )
+
+        if form.is_valid():
+            author = User(
+                username=form.cleaned_data.get("username"),
+                email=form.cleaned_data.get("email"),
+            )
+            author.set_password(raw_password=form.cleaned_data.get("password"))
+            author.save()
+
+            messages.success(
+                request=request,
+                message="The new author has been successfully created.",
+            )
+
+            return redirect(to="index")
+
+    return render(
+        request=request,
+        template_name="accounts/create-author.html",
+        context={
+            "title": "Create Author",
+            "form": form,
+        }
+    )

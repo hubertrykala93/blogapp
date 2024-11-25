@@ -8,8 +8,13 @@
     {% if request.user.is_authenticated %}
     <ul class="menu">
         <li>
+            <a href="{% url 'create-author' %}">Create Author</a>
+        </li>
+
+        <li>
             <a href="{% url 'create-post' %}">Create Post</a>
         </li>
+
         <li>
             <a href="{% url 'logout' %}">
                 <button type="submit" class="btn btn-submit-btn">Logout</button>
